@@ -18,3 +18,23 @@ cm_display = metrics.ConfusionMatrixDisplay(confusion_matrix = confusion_matrix,
 
 cm_display.plot()
 plt.show()
+
+# 1. Inputs
+
+# (1)  A dataframe with one row per individual. Columns will include:
+
+# (i)    Model prediction (as a probability)
+
+# (ii)   Binary outcome (i.e. 0 or 1, where 1 indicates the favorable outcome for the individual being scored)
+
+# (iii)   Model label
+
+# (iv)  Sample weights
+
+# (v)  Demographic data on protected and reference classes
+
+# 2. Outputs
+
+# (1)  One value per protected class measuring discrimination for each metric used
+
+# (2)  [Optional] graphics/visualization, useful formatted output
